@@ -8,6 +8,7 @@ namespace Core.Client
     public static class ClientsFactory
     {
         private static ChannelBase _channel;
+
         private static CpuInfo.CpuInfoClient _cpuInfoClient;
 
         static ClientsFactory()
