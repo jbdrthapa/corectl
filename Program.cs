@@ -14,7 +14,11 @@ namespace Core.Client
             // Print CPUInfo
             await GetCPUInfoAsync();
 
-            await StreamCPUInfoAsync();
+            await Task.Run(() =>
+            {
+                _ = StreamCPUInfoAsync();
+
+            });
 
             Console.WriteLine("Press any key to exit...");
 
